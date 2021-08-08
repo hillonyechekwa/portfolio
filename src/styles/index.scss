@@ -1,0 +1,95 @@
+@import './global';
+
+
+
+header{
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+hgroup{
+    font-family: $family;
+    h2{
+        font-size:$title;
+    }
+    h3{
+        font-size: $subtitle;
+        font-weight: 300;
+        line-height: $lheight
+    }
+}
+
+.projects{
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-template-columns: 1.3fr 1fr;
+    grid-gap: 10px;
+    padding: 5px;
+}
+
+.projects p {
+    font-family: $family;
+    font-size: $body;
+    font-weight: 400;
+    line-height: $lheight;
+    inline-size: 500px;
+    overflow-wrap: break-word;
+}
+
+.projects> div> h2{
+    font-size: $title;
+    font-family: $family;
+}
+
+.projects-button{
+    position: relative;
+    justify-self: center;
+    align-self: end;
+}
+
+.writing h2{
+    font-family: $family;
+    font-size: $title;
+}
+
+.card-wrapper{
+    display: grid;
+    grid-gap: 40px 10px;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+                        "a . b"
+                        "c . .";
+    grid-template-rows: 50% 50%;
+}
+
+
+.bc1{
+    grid-area: a;
+}
+.bc2{
+    grid-area: b;
+    position: relative;
+    top: 30%;
+}
+.bc3{
+    grid-area: c;
+    position: relative;
+    left: 20%;
+
+}
+
+
+.writn-btn{
+    position: relative;
+    top: 50%;
+    left: 60%;
+}
+
+
+
+

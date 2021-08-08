@@ -1,9 +1,15 @@
 import React from 'react';
+import '../styles/card.scss'
+import Button from './button'
 
 
-const Card = () => {
+const Card = ({title, desc, addclass}) => {
     return (
-        <main></main>
+        <div className={`card ${addclass}`}>
+            <h2>{title}</h2>
+            <p>{desc}</p>
+            <Button type="text-btn" name="go to post" />
+        </div>
     )
 }
 

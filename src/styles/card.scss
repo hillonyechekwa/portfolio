@@ -1,0 +1,23 @@
+@import "./global";
+
+// TODO: style to look like a unix window.
+
+.card {
+    width: 500px;
+    height: 300px;
+    border: 2px solid black;
+    background: skyblue;
+    h2 {
+        font-size: $subtitle;
+    }
+
+    p {
+        font-size: $body;
+    }
+}
+
+h2,
+p {
+    font-family: $family;
+    cursor: pointer;
+}

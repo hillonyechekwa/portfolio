@@ -4,9 +4,11 @@
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
 
+require('dotenv').config()
+
 module.exports = {
   siteMetadata: {
-    title: "Hill Onyechewka",
+    title: "Hill Onyechekwa",
     description: "add bio here",
     sites:{
       github: "hillonyechekwa",
@@ -36,6 +38,12 @@ module.exports = {
       resolve: `gatsby-plugin-postcss`,
       options: {
         postCssPlugins: [require('autoprefixer')]
+      }
+    },
+    {
+      resolve: `gatsby-source-graphcms`,
+      options: {
+        endpoint: process.env.GCMS_ENDPOINT
       }
     }
   ],

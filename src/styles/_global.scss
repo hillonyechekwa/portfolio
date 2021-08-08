@@ -1,0 +1,20 @@
+$family: 'Josefin Sans', sans-serif;
+$link: 25px;
+$title: 4rem;
+$body: 1.2rem;
+$subtitle: 1.5rem;
+$lheight: 1.8rem;
+
+html{
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, *::before, *::after{
+    padding: 0;
+}
+
+
+body{
+    padding: 10px;
+}

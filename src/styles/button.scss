@@ -1,0 +1,37 @@
+@import './global';
+
+button{
+    width: 250px;
+    height: 80px;
+    background: none;
+    border: none;
+    font-family: $family;
+    font-size: $link;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.primary{
+    background-color: deepskyblue;
+    color: #000;
+}
+   
+
+.secondary{
+    background-color: navy;
+    color: #fff;
+}
+
+.primary:hover{
+    background-color: #333;
+    color: #fff;
+}
+
+.secondary:hover{
+    background-color: deepskyblue;
+    color: #000;
+}
+
+.text-btn{
+    background-color: none;
+}
