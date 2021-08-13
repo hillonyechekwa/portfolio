@@ -1,6 +1,6 @@
-@import './global';
+@import "./global";
 
-button{
+button {
     width: 250px;
     height: 80px;
     background: none;
@@ -11,27 +11,51 @@ button{
     font-weight: 700;
 }
 
-.primary{
-    background-color: deepskyblue;
+.primary {
+    background-color: $p-light;
+    color: $on-p;
+}
+
+.secondary {
+    background-color: $s-light;
+    color: $on-s;
+}
+
+.primary:hover {
+    background-color: $p-dark;
+    a {
+        color: $on-p;
+    }
+}
+
+.secondary:hover {
+    background-color: $s-dark;
     color: #000;
-}
-   
-
-.secondary{
-    background-color: navy;
-    color: #fff;
+    a {
+        color: $on-p;
+    }
 }
 
-.primary:hover{
-    background-color: #333;
-    color: #fff;
-}
-
-.secondary:hover{
-    background-color: deepskyblue;
-    color: #000;
-}
-
-.text-btn{
+.text-btn {
     background-color: none;
+    a {
+        font-weight: 700;
+        color: $secondary;
+        height: 100%;
+        text-transform: capitalize;
+    }
+}
+button a {
+    text-decoration: none;
+}
+
+.primary a {
+    color: $on-p;
+}
+.secondary a {
+    color: $on-s;
+}
+
+.primary a:hover {
+    color: $on-p;
 }

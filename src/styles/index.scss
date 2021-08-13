@@ -1,95 +1,140 @@
-@import './global';
+@import "./global";
 
-
-
-header{
+header {
     display: grid;
     justify-content: space-evenly;
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
 }
 
-hgroup{
-    font-family: $family;
-    h2{
-        font-size:$title;
-    }
-    h3{
-        font-size: $subtitle;
+hgroup {
+    background: $p-light;
+    color: $on-p;
+    padding: 10px;
+
+    h3 {
+        font-size: $body;
         font-weight: 300;
-        line-height: $lheight
+        line-height: $lheight;
+        font-family: $family2;
     }
 }
 
-.projects{
+.avatar {
+    justify-self: center;
+    align-items: center;
+}
+
+.outlink {
+    font-family: $family;
+    font-size: $body * 2;
+    font-weight: 700;
+    color: $on-s;
+    text-decoration: none;
+}
+
+.outlink:hover {
+    color: $p-light;
+}
+
+.title {
+    font-family: $family;
+    font-size: $title;
+}
+
+.projects h2,.writing > h2 {
+    background: $primary;
+    padding: 5px;
+    color: $on-p;
+    inline-size: 400px;
+}
+
+.projects {
     display: grid;
     justify-content: space-evenly;
     align-items: center;
-    grid-template-columns: 1.3fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-gap: 10px;
     padding: 5px;
+    margin-bottom: 15rem;
 }
 
 .projects p {
-    font-family: $family;
+    font-family: $family2;
     font-size: $body;
-    font-weight: 400;
+    font-weight: 300;
     line-height: $lheight;
-    inline-size: 500px;
-    overflow-wrap: break-word;
+    // inline-size: 500px;
+    // overflow-wrap: break-word;
 }
 
-.projects> div> h2{
-    font-size: $title;
-    font-family: $family;
-}
-
-.projects-button{
+.projects-button {
     position: relative;
     justify-self: center;
     align-self: end;
 }
 
-.writing h2{
-    font-family: $family;
-    font-size: $title;
-}
-
-.card-wrapper{
+.card-wrapper {
     display: grid;
     grid-gap: 40px 10px;
     justify-content: center;
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 
-                        "a . b"
-                        "c . .";
+    grid-template-areas:
+        "a . b"
+        "c . .";
     grid-template-rows: 50% 50%;
 }
 
 
-.bc1{
+.writing a {
+    position: relative;
+    left: 80%;
+}
+
+.writing > h2{
+    position: relative;
+    left: 70%;
+    text-align: right
+}
+.bc1 {
     grid-area: a;
 }
-.bc2{
+.bc2 {
     grid-area: b;
     position: relative;
     top: 30%;
 }
-.bc3{
+.bc3 {
     grid-area: c;
     position: relative;
     left: 20%;
-
 }
 
-
-.writn-btn{
+.blog-btn {
     position: relative;
-    top: 50%;
     left: 60%;
 }
 
+.community {
+    margin-top: 8rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.community p {
+    font-family: $family2;
+    inline-size: 500px;
+    overflow-wrap: break-word;
+    font-size: $subtitle;
+    font-weight: 300;
+}
 
-
-
+.community h2 {
+    inline-size: 450px;
+    overflow-wrap: break-word;
+    text-align: right;
+    background: $primary;
+    padding: 5px;
+    color: $on-p;
+}

@@ -2,6 +2,13 @@
 
 
 .main-background{
-    padding: 80px;
+    padding: 50px;
+    background: $p-dark;
 }
 
+
+.main-wrapper main{
+    background: $surface;
+    padding: 20px;
+    border-radius: 20px;
+}

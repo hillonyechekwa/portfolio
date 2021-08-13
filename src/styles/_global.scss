@@ -1,9 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&family=Lato:wght@300;400;700&display=swap');
+
+
 $family: 'Josefin Sans', sans-serif;
+$family2: 'Lato', sans-serif;
 $link: 25px;
-$title: 4rem;
+$title: 5rem;
 $body: 1.2rem;
 $subtitle: 1.5rem;
 $lheight: 1.8rem;
+$primary: #0224EE;
+$p-dark: #0000BA;
+$p-light: #6C52FF;
+$secondary:#EECB02;
+$s-dark: #B79B00;
+$s-light: #FFFE50;
+$on-p: #fff; 
+$on-s: #2B2F3B;
+$surface: #e5e5e5;
+$background: #fff;
 
 html{
     box-sizing: border-box;
@@ -16,5 +30,6 @@ html{
 
 
 body{
-    padding: 10px;
+    margin: 0;
+    padding: 0;
 }

@@ -3,7 +3,7 @@ import '../styles/avatar.scss'
 
 function Avatar() {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 990">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 990" className="avatar">
             <mask id="mask">
                 <path
                     fill="#fff"
