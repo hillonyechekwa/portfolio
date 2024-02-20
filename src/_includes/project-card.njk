@@ -1,0 +1,14 @@
+<section class="project-card">
+    <div class="project-card__image-wrapper">
+        <a href={{project.data.repoUrl}}>View Project</a>
+        <a href={{project.data.siteUrl}}>View Website</a>
+        <img src={{project.data.image}} alt={{project.data.imageAlt}}>
+        <button clas="project-card__button">
+            <a href={{project.url}}>Read Case Study</a>
+        </button>
+    </div>
+    <div class="project-card__body">
+        <h3 class="project-card__title">{{project.data.title}}</h3>
+        <p class="project-card__summary">{{project.data.summary}}</p>
+    </div>
+</section>

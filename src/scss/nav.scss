@@ -1,0 +1,36 @@
+@use './vars';
+@use './globals';
+
+
+
+
+.navigation{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 10px;
+	background-color: vars.$base;
+	
+	ul{
+		width: 500px;
+		display: flex;
+		justify-content: space-between;
+		font-family: vars.$gopher;
+		font-size: 0.9em;
+		position: relative;
+		left: 100px;
+
+		li{
+			text-transform: capitalize;
+			a{
+				color: vars.$neutral;
+				font-weight: 400;
+			}
+		}
+	}
+}
+
+.navigation img{
+	width: 30px;
+}

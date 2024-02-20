@@ -1,0 +1,100 @@
+---
+title: "Home"
+layout: base.njk
+---
+
+
+<header class="home-hero">
+    <article id="first-col">
+        <h3>
+            <span>Web</span>
+            <span>Engineer</span>
+            <small>
+                <span>Typescript</span>
+                <span>Rust</span>
+                <span>GraphQl</span>
+            </small>
+        </h3>
+        <h3>
+            <span>Technical</span>
+            <span>Writer</span>
+        </h3>
+    </article>
+    <article id="second-col">
+        <p>
+            I have an invested interest in the multi-faceted parts of software engineering and computer programming and
+            implementing them to solve real problems that affect me and my environment.
+        </p>
+
+        <button id="primary-cta"><a href="./resume/Hillary Onyechekwa.pdf" download>View Resume</a> </button>
+    </article>
+
+    <h1>
+        <span>Hillary</span>
+        <span>Onyechekwa</span>
+    </h1>
+</header>
+<main class="index-main">
+    <section id="main-inner__wrappper">
+        <section id="about" class="main-sections">
+            <article>
+                <img src="/assets/hillz1.jpg" alt="A Picture of Hill">
+                <h3>about me.</h3>
+            </article>
+            <p>I'm a <strong>web engineer</strong> with a strong background in creating building <strong>aesthetically appealing and user-friendly web experiences </strong> and problem solving web applications. I am interested in finding roles where I can <strong>challenge myself and provide value to users of the web</strong>. I am eager to leverage my expertise and experience as a valuable addition to a dynamic team, helping the compay acheive its goals.
+            </p>
+            <p>
+                I also an embedded systems  and robotics enthusiast and working towards gaining experience in that technology niche someday. </p>
+        </section>
+        <section id="skills" class="main-sections">
+            <h3>Skills.</h3>
+            <p>Most times, I work with Typescript(React and Vue), Graphql and Rust. I take interest in using modern animation tools
+                and technniques to to bring a more neu-natural and realistic user experience to software especially on
+                the web.</p>
+                <section id="skills-grid">
+                    <div>
+                        <img src="/assets/icons8-html.svg" alt="">
+                        <h4>html</h4>
+                    </div>
+                    <div>
+                        <img src="/assets/icons8-css.svg" alt="">
+                        <h4>css</h4>
+                    </div>
+                    <div>
+                        <img src="/assets/js.png" alt="">
+                        <h4>JavaScript</h4>
+                    </div>
+                    <div>
+                        <img src="/assets/icons8-typescript.svg" alt="">
+                        <h4>TyeScript</h4>
+                    </div>
+                    <div>
+                        <img src="/assets/icons8-sass.svg" alt="">
+                        <h4>Sass</h4>
+                    </div>
+                    <div>
+                        <img src="/assets/icons8-git.svg" alt="">
+                        <h4>Git</h4>
+                    </div>
+                    <div>
+                        <img src="/assets/react.png" alt="">
+                        <h4>React</h4>
+                    </div>
+                    <div>
+                        <img src="/assets/node-js-logo.png" alt="">
+                        <h4>Node</h4>
+                    </div>
+                    <div>
+                        <img src="/assets/gql.png" alt="">
+                        <h4>Graphql</h4>
+                    </div>
+                </section>
+        </section>
+        <section id="projects-slide" class="main-sections">
+            <h2>Selected Projects.</h2>
+            <div class="slide-control">
+            {% include "project-grid.njk" %}
+            </div>
+        </section>
+    </section>
+</main>

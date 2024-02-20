@@ -1,0 +1,23 @@
+---
+layout: "base.njk"
+---
+
+<header  class="project-hero">
+    <section>
+        <a href={{repoUrl}}>View project</a>
+        <a href={{siteUrl}}>Visit Website</a>
+        <img src={{image}} alt={{imageAlt}} >
+        <h3 class="project-title">{{title}}</h3>
+    </section>
+    <section>
+        <p class="project-summary">{{summary}}</p>
+        <ul class="project-tech__uses">
+        {% for tag in project.data.tech %}
+            <li>{{tag}}</li>
+        {% endfor %}
+        </ul>
+    </section>
+</header>
+<section class="project-details">
+    {{content | safe}}
+</section>

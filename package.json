@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "savant v's portfolio",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm-run-all sass --parallel watch:*",
+    "watch:eleventy": "eleventy --serve",
+    "watch:sass": "npm run sass -- --watch",
+    "build": "eleventy",
+    "sass": "sass --style=compressed src/scss/styles.scss src/_includes/css/styles.css"
+  },
+  "author": "Hill Onyechekwa",
+  "license": "MIT",
+  "dependencies": {
+    "-": "^0.0.1",
+    "@11ty/eleventy": "^2.0.1",
+    "gasp": "^0.0.2",
+    "sass": "^1.62.1"
+  },
+  "devDependencies": {
+    "@11ty/eleventy-img": "^4.0.2",
+    "npm-run-all": "^4.1.5",
+    "sharp": "^0.33.2"
+  }
+}
