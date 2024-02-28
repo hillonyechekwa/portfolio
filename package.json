@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "savant v's portfolio",
+  "description": "hill's portfolio",
   "main": "index.js",
   "scripts": {
     "dev": "npm-run-all sass --parallel watch:*",
@@ -13,7 +13,6 @@
   "author": "Hill Onyechekwa",
   "license": "MIT",
   "dependencies": {
-    "-": "^0.0.1",
     "@11ty/eleventy": "^2.0.1",
     "gasp": "^0.0.2",
     "sass": "^1.62.1"

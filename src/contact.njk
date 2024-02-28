@@ -9,19 +9,19 @@ layout: "base.njk"
     <img src="/assets/staringbeaniehill.svg" alt="" .
 </header>
 
-<section class="form-wrapper">
+<section class="form-wrapper" data-netlify="">
     <form name="contact" netlify>
         <div class="form-control">
+            <input type="text" name="name" id="first-name" placeholder="">
+        </div>
             <label for="name"> Name </label>
-            <input type="text" name="name" id="first-name">
-        </div>
         <div class="form-control">
+            <input type="email" name="email" id="email" placeholder="">
             <label for="email"> Email </label>
-            <input type="email" name="email" id="email">
         </div>
         <div class="form-control">
+            <textarea name="message" id="message" cols="30" rows="10" placeholder=""></textarea>
             <label for="message"> Message </label>
-            <textarea name="message" id="message" cols="30" rows="10"></textarea>
         </div>
         <button type="submit">Let's Connect</button>
     </form>
