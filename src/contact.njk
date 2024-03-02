@@ -2,32 +2,30 @@
 title: "Contacts"
 layout: "base.njk"
 ---
-<header id="contacts-hero">
-    <h3>
-        If you have any interesting projects you'd like me to be a part of, or just want to talk shop and share Ideas, contact me. I love getting involved in open source projects too.
-    </h3>
-    <img src="/assets/staringbeaniehill.svg" alt="" .
-</header>
 
-<section class="form-wrapper" data-netlify="">
-    <form name="contact" netlify>
-        <div class="form-control">
-            <input type="text" name="name" id="first-name" placeholder="">
-        </div>
-            <label for="name"> Name </label>
-        <div class="form-control">
-            <input type="email" name="email" id="email" placeholder="">
-            <label for="email"> Email </label>
-        </div>
-        <div class="form-control">
-            <textarea name="message" id="message" cols="30" rows="10" placeholder=""></textarea>
-            <label for="message"> Message </label>
-        </div>
-        <button type="submit">Let's Connect</button>
-    </form>
-</section>
+<main class="contacts-wrapper">
+    <header id="contacts-hero">
+        <h3>
+            If you have any interesting projects you'd like me to be a part of, or just want to talk shop and share Ideas, contact me. I love getting involved in open source projects too.
+        </h3>
+        <img src="/assets/staringbeaniehill.svg" alt="" >
+    </header>
 
-
-
-
-
+    <section class="form-wrapper">
+        <form name="contact" data-netlify="">
+            <div class="form-control">
+                <input type="text" name="name" id="first-name" placeholder="">
+                <label for="name"> Name </label>
+            </div>
+            <div class="form-control">
+                <input type="email" name="email" id="email" placeholder="">
+                <label for="email"> Email </label>
+            </div>
+            <div class="form-control">
+                <textarea name="message" id="message" cols="60" rows="10" placeholder=""></textarea>
+                <label for="message"> Message </label>
+            </div>
+            <button type="submit">Let's Connect</button>
+        </form>
+    </section>
+</main>

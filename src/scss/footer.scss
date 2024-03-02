@@ -9,10 +9,11 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    position: sticky;
     flex-shrink: 0;
+    // padding-top: 20px;
     position: relative;
     top: 100px;
+    // background-color: vars.$lightbase;
 
     h3{
         font-size: 2.7em;

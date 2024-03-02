@@ -87,6 +87,7 @@ article#second-col{
     font-size: 1.2em;
     position: relative;
     top: 30px;
+    border-color: transparent;
     background-color: vars.$neutral;
     cursor: pointer;
     a{
@@ -103,6 +104,7 @@ article#second-col{
         width: 50px;
         height: 50px;
         border-radius: 50%;
+        border-color: transparent;
         background-color: vars.$neutral;
         position: absolute;
         left: 270px;
@@ -216,10 +218,12 @@ section#skills{
         img{
             width: 100px;
             margin-bottom: 10px;
-            transition: transform .6s ease-out;
+            filter: sepia(2);
+            transition: filter .6s ease-out, transform .6s ease-in-out;
 
             &:hover{
-                transform: scale(1.24);
+                transform: scale(1.02);
+                filter: sepia(0);
             }
         }
     }
@@ -268,6 +272,11 @@ section#projects-slide{
                 position: relative;
                 top: 10px;
                 left: 95%;
+                padding: 10px 0px 0px 0px;
+                text-align: center;
+                font-family: vars.$gotham;
+                font-weight: 600;
+                font-size: 1.3em;
             }
             a{
                 position: relative;

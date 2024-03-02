@@ -3,18 +3,21 @@
 
 
 #about-hero{
-    width: calc(100vw - 40px);
+    width: 100%;
     height: 100vh;
+    overflow-x: hidden;
     display: grid;
     justify-content: space-between;
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    background-color: vars.$base;
+
 
 
     article{
         height: 100%;
-        font-family: vars.$gotham;
+        font-family: vars.$gopher;
         font-weight: 600;
         display: flex;
         flex-direction: column;
@@ -31,18 +34,23 @@
 
             p{
                 position: relative;
-                top: 100px;
+                top: 50px;
             }
         }
-        img{
-            width: 500px;
 
+        img{
+            width: 250px;
+            filter: brightness(1.4);
+            position: relative;
+            top: 93px;
+            // left: -30%;
         }
 
         p{
-            font-size: 1.8em;
+            font-size: 1.2em;
             inline-size: 500px;
             font-weight: lighter;
+            color: vars.$neutral;
         }
     }
 }
@@ -55,15 +63,18 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     font-family: vars.$gopher;
+    background-color: vars.$neutral;
 
     p{
         font-family: vars.$gotham;
-        font-size: 1.5em;
+        font-size: 1.2em;
         inline-size: 400px;
         justify-self: center;
         font-weight: 500;
     }
     img{
-        width: 500px;
+        width: 300px;
+        position: relative;
+        top: 30px;
     }
 }
