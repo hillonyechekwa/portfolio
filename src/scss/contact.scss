@@ -6,20 +6,26 @@
 
 #contacts-hero {
     width: 100%;
-    height: 40vh;
+    height: 100dvh;
+    position: relative;
+    
 
     h3 {
-        font-family: vars.$gotham;
-        font-size: 1.3em;
+        font-family: vars.$gopher;
+        font-size: 1.2em;
         inline-size: 500px;
-        text-align: center;
+        position: relative;
+        top: 20%;
     }
 
     img {
         width: 450px;
         margin: 0 auto;
-        position: relative;
-        left: 30%;
+        position: absolute;
+        top: 20%;
+        left: 55%;
+        transform: rotate(-45deg);
+        z-index: -1;
     }
 }
 
@@ -33,6 +39,8 @@
     border-radius: 15px;
     background-color: vars.$neutral;
     border: 1.5px solid vars.$base;
+    position: relative;
+    z-index: 1;
 
 
     .form-control {

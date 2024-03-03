@@ -11,6 +11,10 @@
 	justify-content: flex-start;
 	padding: 10px;
 	background-color: vars.$base;
+	transition: top .5s ease-in-out;
+	position: absolute;
+	top: 0;
+	left: 0;
 	
 	ul{
 		width: 500px;
@@ -33,4 +37,12 @@
 
 .navigation img{
 	width: 30px;
+}
+
+.navigation.scroll-up{
+	top: 0;
+}
+
+.navigation.scroll-down{
+	top:  -100%;
 }

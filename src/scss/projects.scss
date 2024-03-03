@@ -44,6 +44,8 @@
         justify-content: center;
         align-items: center;
         margin-bottom: 40%;
+        padding: 5px 25px;
+        border-radius: 8px;
 
         .project-card__image-wrapper{
             display: flex;
@@ -74,28 +76,15 @@
                 }
             }
 
-            // a{
-            //     font-family: vars.$gotham;
-            //     font-size: .7rem;
-            //     font-weight: 700;
-            //     color: vars.$lightbase !important;
-            //     margin-bottom: 8px;
-            //     border: 1px solid black;
-            //     &:after{
-            //         content: "";
-            //         display: block;
-                    
-            //     }
-            // }
-
 
             a.project-link{
-                width: 100px;
-                color: darken(vars.$lightbase, 7%);
-                border: 1px solid red;
+                width: 7em;
+                color: darken(vars.$lightbase, 15%);
+                // border: 1px solid red;
                 position: relative;
-                padding: 10px 0;
+                padding: 6px 0;
                 font-family: vars.$gotham;
+                font-size: .86rem;
                 &:after{
                     content: "";
                     display: block;
@@ -107,11 +96,12 @@
                     height: 3px;
                     background-color: vars.$base;
                     transform: scaleX(0);
+                    transform-origin: left;
                     transition: transform 0.4s ease-in-out;
                 }
 
                 &:hover{
-                    color: darken(vars.$lightbase, 15%);
+                    color: darken(vars.$lightbase, 40%);
                     &:after{
                         transform: scaleX(1);
                     }
@@ -163,9 +153,12 @@
 
 .project-card__image-wrapper button a{
     font-family: vars.$gotham;
+    display: inline-block;
     font-size: .7em;
     font-weight: 700;
     color: black;
     margin-bottom: 7px;
     transition: color 500ms ease-in-out;
+    width: 100%;
+    height: 100%;
 }

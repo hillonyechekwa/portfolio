@@ -12,9 +12,10 @@ layout: "base.njk"
     <section>
         <p class="project-summary">{{summary}}</p>
         <ul class="project-tech__uses">
-        {% for tag in project.data.tech %}
-            <li>{{tag}}</li>
-        {% endfor %}
+        <p class="tech-title">Tech Used</p>
+            {% for tag in tech %}
+                <li>{{tag}}</li>
+            {% endfor %}
         </ul>
     </section>
 </header>

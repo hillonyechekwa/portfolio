@@ -10,13 +10,21 @@
         <link rel="icon" type="image/png" href="/favicon-32x32.png"/>
         <link rel="apple-touch-icon" href="/apple-touch-icon.png">
         <link rel="apple-touch-icon" href="/android-chrome-192x192.png">
+        <script src="{{'/scripts/utils/ScrollTrigger.min.js'}}" defer></script>
+        <script src="{{'/scripts/utils/gsap.min.js'}}" defer></script>
+        <script src="{{'/scripts/utils/lenis.umd.js'}}" defer></script>
+        <script src="{{'/scripts/utils/barba.umd.js'}}" defer><script>
+        <script src="{{'/split-type.min.js'}}" defer></script>
+        <script src="{{'/scripts/script.js'}}" defer></script>
+        <script src="{{'/scripts/animations.js'}}" defer></script>
     <title>Hill | {{title}}</title>
     <style>
         {% include "css/styles.css" ignore missing%}
     </style>
 </head>
 
-<body>
+<body data-barba="wrapper">
+    <div class="overlay-transition"></div>
    {% include "nav.njk" %}
     <main class="main-content container">
         {{content | safe}}
@@ -26,6 +34,10 @@
         import Lazyload from 'https://cdn.skypack.dev/vanilla-lazyload';
          const lazyload = new Lazyload();
     </script>
+
+    {% block scripts %}
+    <script 
+    {% endblock %}
 </body>
 
 </html>
