@@ -3,15 +3,17 @@ title: "Projects"
 layout: base.njk
 ---
 
-<header class="projects-hero">
-    <h2>
-        <span>All</span>
-        <span>Projects</span>
-    </h2>
-    <p>
-        Here are a few of my best projects that show case how I use the technologies in my tech stack to solve problems around my life and things that interest me.
-    </p>
-</header>
-<section class="projects-list">
-    {% include "project-grid.njk" %}
-</section>
+<main data-barba="container" data-barba-namespace="projects">
+    <header class="projects-hero">
+        <h2>
+            <span>All</span>
+            <span>Projects</span>
+        </h2>
+        <p>
+            Here are a few of my best projects that show case how I use the technologies in my tech stack to solve problems around my life and things that interest me.
+        </p>
+    </header>
+    <section class="projects-list">
+        {% include "project-grid.njk" %}
+    </section>
+</main>

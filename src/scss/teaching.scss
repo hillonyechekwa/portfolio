@@ -34,7 +34,9 @@
     p{
         font-family: vars.$gotham;
         font-weight: 600;
-        font-size: 1.7em;
+        font-size: 1.3em;
         inline-size: 500px;
+        position: relative;
+        top: 20px;
     }
 }

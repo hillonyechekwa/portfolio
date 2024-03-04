@@ -1,7 +1,8 @@
-$media-mobile-s: "only screen and (max-width: 325px)";
-$media-mobile-m: "only screen and (max-width: 376px)";
-$media-mobile-l: "only screen and (max-width: 426px)";
-$media-tab: "only screen and (max-width: 769px)";
+$media-mobile-s: "only screen and (min-width: 350px)";
+$media-mobile-m: "only screen and (min-width: 65px)";
+$media-tab: "only screen and (min-width: 850px)";
+$media-laptop-min: "only screen and (min-width: 1240px)";
+
 
 //fonts
 $gotham: 'Gotham', sans-serif;

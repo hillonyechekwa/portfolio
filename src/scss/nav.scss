@@ -12,10 +12,25 @@
 	padding: 10px;
 	background-color: vars.$base;
 	transition: top .5s ease-in-out;
-	position: absolute;
+	position: sticky;
 	top: 0;
-	left: 0;
+	// left: 0;
+	z-index: 3;
 	
+	 &:after{
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 3px;
+                    background-color: vars.$base;
+                    transform: scaleX(0);
+                    transform-origin: left;
+                    transition: transform 0.4s ease-in-out;
+                }
 	ul{
 		width: 500px;
 		display: flex;
@@ -45,4 +60,97 @@
 
 .navigation.scroll-down{
 	top:  -100%;
+	// visibility: hidden;
+}
+
+
+.menu-btn{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: darken(vars.$neutral, 6%);
+	display: grid;
+	place-items: center;
+	visibility: hidden;
+	position: fixed;
+	top: 50px;
+	left: 90%;
+	cursor: pointer;
+	box-shadow: 1px 2px 4px #585757;
+	z-index: 5;
+
+	img{
+		width: 30px;
+	}
+}
+
+.menu-btn.show{
+	visibility: visible;
+}
+
+.menu-overlay{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	place-items: center;
+	background-color: darken(vars.$neutral, 4%);
+	transform: scaleX(0);
+	transform-origin: left left;
+	z-index: 4;
+
+	ul{
+		width: 100%;
+		height: 80%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items:center;
+		visibility: hidden;
+		
+
+		li{
+			width: 16.7%;
+			text-align: center;
+
+
+
+			a{
+				font-family: vars.$gopher;
+				font-size: 1.7em;
+				font-weight: 700;
+				text-transform: capitalize;
+				font-variant: small-caps;
+				padding: 6px 0;
+				transition: color .4s ease-in-out;
+				color: vars.$base;
+				position: relative;
+				// opacity: 0;
+				&:after{
+					content: "";
+					// display: block;
+					position: absolute;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					width: 100%;
+					height: 3px;
+					background-color: vars.$base;
+					transform: scaleX(0);
+					transform-origin: left;
+					transition: transform 0.4s ease-in-out;
+				}
+
+				&:hover{
+					color: vars.$lightbase;
+
+					&:after{
+						transform: scaleX(1);
+					}
+				}
+			}
+		}
+	}
 }
