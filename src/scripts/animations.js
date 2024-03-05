@@ -35,6 +35,15 @@ console.log("Animations Connected");
 
 
 
+const splitTypes = document.querySelectorAll(".about-text");
+
+splitTypes.forEach((char, i) => {
+    // console.log('before object', char);
+    const text = new SplitType(char, {types: 'chars,words'});
+
+    console.log('after object', text);
+})
+
 
 
 
@@ -80,7 +89,7 @@ const homeIntroAnimation = (tl) => {
 }
 
 const aboutIntroAnimation = (tl) => {
-
+   
 }
 
 const projectsIntroAnimation = (tl) => {}
