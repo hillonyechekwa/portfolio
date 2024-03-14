@@ -8,14 +8,18 @@
     "watch:eleventy": "eleventy --serve",
     "watch:sass": "npm run sass -- --watch",
     "build": "eleventy",
-    "sass": "sass --style=compressed src/scss/styles.scss src/_includes/css/styles.css"
+    "sass": "sass --style=compressed src/scss/styles.scss src/_includes/css/styles.css",
+    "clean": "rm -rf dist"
   },
   "author": "Hill Onyechekwa",
   "license": "MIT",
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "gasp": "^0.0.2",
-    "sass": "^1.62.1"
+    "@studio-freight/lenis": "^1.0.39",
+    "barba.js": "^1.0.0",
+    "gsap": "^3.12.5",
+    "sass": "^1.62.1",
+    "split-type": "^0.3.4"
   },
   "devDependencies": {
     "@11ty/eleventy-img": "^4.0.2",

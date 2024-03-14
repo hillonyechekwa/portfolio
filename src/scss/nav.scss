@@ -11,8 +11,8 @@
 	justify-content: flex-start;
 	padding: 10px;
 	background-color: vars.$base;
-	transition: top .5s ease-in-out;
-	position: sticky;
+	transition: top 500ms ease-in-out;
+	position: absolute;
 	top: 0;
 	// left: 0;
 	z-index: 3;
@@ -60,7 +60,6 @@
 
 .navigation.scroll-down{
 	top:  -100%;
-	// visibility: hidden;
 }
 
 
@@ -71,10 +70,10 @@
 	background-color: darken(vars.$neutral, 6%);
 	display: grid;
 	place-items: center;
-	visibility: hidden;
 	position: fixed;
 	top: 50px;
-	left: 90%;
+	left: 0;
+	opacity: 0;
 	cursor: pointer;
 	box-shadow: 1px 2px 4px #585757;
 	z-index: 5;
@@ -84,9 +83,6 @@
 	}
 }
 
-.menu-btn.show{
-	visibility: visible;
-}
 
 .menu-overlay{
 	width: 100%;

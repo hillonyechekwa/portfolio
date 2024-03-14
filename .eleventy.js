@@ -1,4 +1,8 @@
-
+// const gsap = require('gsap')
+// const scrollTrigger = require('gsap/ScrollTrigger')
+// const barba = require('barba.js')
+// const lenis = require('@studio-freight/lenis')
+// const splitType = require('split-type')
 
 module.exports = function(eleventyConfig) {
 

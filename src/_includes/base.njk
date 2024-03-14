@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang='en'>
 
 <head>
@@ -8,15 +7,20 @@
     <meta name="description"
         content="I am a fullstack web engineer that builds web sites and applications to solve business problems using the beauty of programming logic in combination with modern technological solutions, tools and techniques">
         <link rel="icon" type="image/png" href="/favicon-32x32.png"/>
+
         <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
         <link rel="apple-touch-icon" href="/android-chrome-192x192.png">
+
         <script src="{{'/scripts/utils/gsap.min.js'}}" defer></script>
         <script src="{{'/scripts/utils/ScrollTrigger.min.js'}}" defer></script>
-        <script src="{{'/scripts/utils/lenis.umd.js'}}" defer></script>
-        <script src="{{'/scripts/utils/barba.umd.js'}}" defer><script>
+        <script src="{{'/scripts/utils/CSSRulePlugin.min.js'}}" defer></script>
+        <script src="{{'/scripts/utils/barba.umd.js'}}" defer></script>
         <script src="{{'/scripts/utils/split-type.min.js'}}" defer></script>
-        <script src="{{'/scripts/script.js'}}" defer></script>
-        <script src="{{'/scripts/animations.js'}}" defer></script>
+        <script src="{{'/scripts/utils/lenis.umd.js'}}" defer></script>
+        <script src="{{'/scripts/main.js'}}" defer></script>
+        <script src="{{'/scripts/anims.js'}}" defer></script>
+
     <title>Hill | {{title}}</title>
     <style>
         {% include "css/styles.css" ignore missing%}
@@ -33,14 +37,6 @@
         {{content | safe}}
     </main>
     {% include "footer.njk" %}
-    <script type="module" async>
-        import Lazyload from 'https://cdn.skypack.dev/vanilla-lazyload';
-         const lazyload = new Lazyload();
-    </script>
-
-    {% block scripts %}
-    <script 
-    {% endblock %}
 </body>
 
 </html>
